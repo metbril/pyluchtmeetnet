@@ -7,6 +7,9 @@ https://github.com/pypa/sampleproject
 
 from setuptools import find_packages, setup
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name="pyluchtmeetnet",
     version="0.1.0",
@@ -32,7 +35,7 @@ setup(
     keywords="air quality, health, api",
     packages=find_packages(),
     python_requires=">=3.6, <4",
-    # install_requires=['peppercorn'],
+    install_requires=["requests"],
     project_urls={
         "Bug Reports": "https://github.com/metbril/pyluchtmeetnet/issues",
         "Funding": "https://ko-fi.com/metbril",

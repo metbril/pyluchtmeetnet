@@ -2,7 +2,11 @@
 
 A python package to use the [Luchtmeetnet 2020 OpenAPI][luchtmeetnet-api].
 
-[luchtmeetnet-api]: https://api-docs.luchtmeetnet.nl/
+## Installation
+
+```shell
+$ pip3 install pyluchtmeetnet
+```
 
 ## Code example
 
@@ -24,3 +28,5 @@ print(lki)
 measurements = Luchtmeetnet().get_latest_station_measurements(station["number"])
 print(measurements)
 ```
+
+[luchtmeetnet-api]: https://api-docs.luchtmeetnet.nl/
