@@ -11,21 +11,23 @@ $ pip3 install pyluchtmeetnet
 ## Code example
 
 ```python
-from pymluchtmeetnet import Luchtmeetnet
+from pyluchtmeetnet.luchtmeetnet import Luchtmeetnet
 
-latitude = 51.7
-longitude = 4.5
+latitude = 52.0808
+longitude = 4.3063
+
+lmn = Luchtmeetnet()
 
 # Get nearest station
-station = Luchtmeetnet().get_nearest_station(latitude, longitude)
+station = lmn.get_nearest_station(latitude, longitude)
 print(station)
 
 # Get latest LKI from station
-lki = Luchtmeetnet().get_latest_station_lki(station["number"])
+lki = lmn.get_latest_station_lki(station["number"])
 print(lki)
 
 # Get latest measurements from station
-measurements = Luchtmeetnet().get_latest_station_measurements(station["number"])
+measurements = lmn.get_latest_station_measurements(station["number"])
 print(measurements)
 ```
 
