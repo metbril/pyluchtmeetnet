@@ -32,7 +32,8 @@ setup(
         "Programming Language :: Python :: 3 :: Only",
     ],
     keywords="air quality, health, api",
-    packages=find_packages("src"),
+    packages=find_packages(),
+    py_modules=[splitext(basename(i))[0] for i in glob.glob("src/*.py")],
     python_requires=">=3.7, <4",
     install_requires=["requests"],
     project_urls={
