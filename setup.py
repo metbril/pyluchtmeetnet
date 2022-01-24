@@ -32,7 +32,7 @@ setup(
         "Programming Language :: Python :: 3 :: Only",
     ],
     keywords="air quality, health, api",
-    packages=find_packages(),
+    packages=find_packages("src"),
     python_requires=">=3.7, <4",
     install_requires=["requests"],
     project_urls={
