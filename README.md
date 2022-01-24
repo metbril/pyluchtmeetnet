@@ -11,7 +11,7 @@ $ pip3 install pyluchtmeetnet
 ## Code example
 
 ```python
-from pyluchtmeetnet.luchtmeetnet import Luchtmeetnet
+from pyluchtmeetnet import Luchtmeetnet
 
 latitude = 52.0808
 longitude = 4.3063
