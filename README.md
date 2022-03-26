@@ -19,7 +19,7 @@ longitude = 4.3063
 lmn = Luchtmeetnet()
 
 # Get nearest station
-station = lmn.get_nearest_station(latitude, longitude)
+station = lmn.get_nearest_station_data(latitude, longitude)
 print(station)
 
 # Get latest LKI from station
