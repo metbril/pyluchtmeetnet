@@ -12,7 +12,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="pyluchtmeetnet",
-    version="0.1.0",
+    version="0.1.2",
     description="A module for getting air quality data from Luchtmeetnet OpenAPI",
     long_description=long_description,
     long_description_content_type="text/markdown",
