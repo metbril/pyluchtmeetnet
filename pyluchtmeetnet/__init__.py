@@ -2,7 +2,6 @@
 
 import logging
 import json
-import sys
 from math import cos, asin, sqrt
 
 import requests
