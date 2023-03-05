@@ -92,15 +92,15 @@ class Luchtmeetnet:
 
         data = []
         for component in components:
-            json_component = [
-                meas for meas in measurements if meas["formula"] == component
-            ]
-            element = {
-                component: json_component[0]["value"],
-                "timestamp": json_component[0]["timestamp_measured"],
-            }
-            data.append(element)
-
+            for meas in measurements:
+                if meas["formula"] == component:
+                    json_component = [meas]
+                    element = {
+                        component: json_component[0]["value"],
+                        "timestamp": json_component[0]["timestamp_measured"],
+                    }
+                    data.append(element)
+                    
         _LOGGER.debug("Latest measurements:\n%s", data)
         return data
 
