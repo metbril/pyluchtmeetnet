@@ -10,8 +10,8 @@ jobs:
   build:
 
     # https://github.com/actions/setup-python/issues/854
-    # runs-on: ubuntu-latest
-    runs-on: ubuntu:22.04
+    # runs-on: ubuntu:22.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
