@@ -15,7 +15,7 @@ jobs:
         python-version: ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
         platform: ["ubuntu-latest"]
     name: Build ${{ matrix.python-version }}
-    runs-on: ${{ matrix.python-version }}
+    runs-on: ${{ matrix.platform }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
