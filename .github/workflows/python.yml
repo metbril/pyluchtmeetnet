@@ -8,15 +8,14 @@ on:
 
 jobs:
   build:
-
     # https://github.com/actions/setup-python/issues/854
     # runs-on: ubuntu:22.04
-    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
+        platform: ["ubuntu-latest"]
     name: Build ${{ matrix.python-version }}
-
+    runs-on: ${{ matrix.python-version }}
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -32,3 +31,4 @@ jobs:
       uses: lgeiger/black-action@v1.0.1
       with:
         args: "."
+
