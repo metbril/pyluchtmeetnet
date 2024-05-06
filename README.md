@@ -1,3 +1,7 @@
+![PyPI - Version](https://img.shields.io/pypi/v/pyluchtmeetnet)
+![PyPI - Status](https://img.shields.io/pypi/status/pyluchtmeetnet)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pyluchtmeetnet)
+
 # pyluchtmeetnet
 
 A python package to use the [Luchtmeetnet 2020 OpenAPI][luchtmeetnet-api].
